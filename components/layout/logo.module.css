@@ -1,0 +1,27 @@
+.logo {
+  text-transform: uppercase;
+  font-size: var(--size-5);
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-grey-50);
+  animation: bounce 2s infinite; /* Use the "bounce" animation with a 2-second duration and repeat infinitely */
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: var(--size-8);
+  }
+}
+
+/* Define the "bounce" animation using keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Initial and final position, as well as midpoints */
+  }
+  40% {
+    transform: translateY(-20px); /* Bounce up position */
+  }
+  60% {
+    transform: translateY(-10px); /* Bounce down position */
+  }
+}
